@@ -1,95 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Meta tags para SEO e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dia 4 - Construção de Abrigo | Sobrevivência na Ilha">
     <title>Dia 4 - Construção de Abrigo</title>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Container para partículas flutuantes -->
+    <div id="particles-container"></div>
 
     <div class="container">
-        <h1>🏕 Dia 4 - Construção de Abrigo</h1>
+        <!-- Cabeçalho -->
+        <header class="text-center mb-4">
+            <h1 class="fade-in">
+                <i class="fas fa-campground text-warning"></i> Dia 4 - Construção de Abrigo
+            </h1>
+        </header>
 
-        <div class="intro">
+        <!-- Introdução -->
+        <section class="intro fade-in fade-in-delay-1">
             <p>Com água e comida asseguradas, é hora de construir um abrigo adequado. Um bom abrigo 
             protege contra os elementos da natureza, fornece descanso adequado e melhora significativamente 
             a moral do grupo.</p>
+        </section>
+
+        <!-- Fase -->
+        <div class="phase short-term fade-in fade-in-delay-2">
+            <i class="fas fa-clock"></i> Fase: Sobrevivência Imediata
         </div>
 
-        <div class="phase short-term">
-            🔴 Fase: Sobrevivência Imediata
-        </div>
+        <!-- Escolha do local -->
+        <section class="fade-in fade-in-delay-2">
+            <h2><i class="fas fa-map-marker-alt"></i> Escolhendo o Local</h2>
+            
+            <div class="section fade-in fade-in-delay-2">
+                <h3><i class="fas fa-check-circle text-success"></i> Critérios para Escolher o Local Ideal</h3>
+                <ul>
+                    <li><strong>Elevação:</strong> Escolher área elevada para evitar enchentes</li>
+                    <li><strong>Proximidade de água:</strong> Perto o suficiente para acesso fácil, mas não muito próximo</li>
+                    <li><strong>Proteção natural:</strong> Preferir locais próximos a formações rochosas ou árvores grandes</li>
+                    <li><strong>Segurança:</strong> Verificar ausência de animais peçonhentos e queda de galhos</li>
+                    <li><strong>Madeireira:</strong> Ter acesso fácil a galhos e folhas para construção</li>
+                </ul>
+            </div>
 
-        <h2>🎯 Escolhendo o Local</h2>
-        
-        <div class="section">
-            <h3>Critérios para Escolher o Local Ideal</h3>
-            <ul>
-                <li><strong>Elevação:</strong> Escolher área elevada para evitar enchentes</li>
-                <li><strong>Proximidade de água:</strong> Perto o suficiente para acesso fácil, mas não muito próximo</li>
-                <li><strong>Proteção natural:</strong> Preferir locais próximos a formações rochosas ou árvores grandes</li>
-                <li><strong>Segurança:</strong> Verificar ausência de animais peçonhentos e queda de galhos</li>
-                <li><strong>Madeireira:</strong> Ter acesso fácil a galhos e folhas para construção</li>
-            </ul>
-        </div>
+            <div class="section fade-in fade-in-delay-3">
+                <h3><i class="fas fa-times-circle text-danger"></i> Locais a EVITAR</h3>
+                <ul>
+                    <li>Cavernas habitadas por animais</li>
+                    <li>Áreas baixas que acumulam água</li>
+                    <li>Perto de falésias instáveis</li>
+                    <li>Áreas expostas a ventos fortes</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="section">
-            <h3>Locais a EVITAR</h3>
-            <ul>
-                <li>Cavernas habitadas por animais</li>
-                <li>Áreas baixas que acumulam água</li>
-                <li>Perto de falésias instáveis</li>
-                <li>Áreas expostas a ventos fortes</li>
-            </ul>
-        </div>
+        <!-- Tipos de abrigo -->
+        <section class="fade-in fade-in-delay-3">
+            <h2><i class="fas fa-hammer"></i> Tipos de Abrigo</h2>
 
-        <h2>🛠 Tipos de Abrigo</h2>
+            <div class="section fade-in fade-in-delay-3">
+                <h3><i class="fas fa-leaf text-success"></i> 1. Abrigo de Folhas (Mais Simples)</h3>
+                <ul>
+                    <li>Usar 3-4 galhos fortes como estrutura principal</li>
+                    <li>Colocar folhas secas em camadas sobre a estrutura</li>
+                    <li>Camada externa deve ser mais espessa para repelir água</li>
+                    <li>Ideal para climas tropicais</li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h3>1. Abrigo de Folhas (Mais Simples)</h3>
-            <ul>
-                <li>Usar 3-4 galhos fortes como estrutura principal</li>
-                <li>Colocar folhas secas em camadas sobre a estrutura</li>
-                <li>Camada externa deve ser mais espessa para repelir água</li>
-                <li>Ideal para climas tropicais</li>
-            </ul>
-        </div>
+            <div class="section fade-in fade-in-delay-4">
+                <h3><i class="fas fa-tree text-warning"></i> 2. Cabana de Galhos</h3>
+                <ul>
+                    <li>Estrutura mais robusta com paredes de galhos entrelaçados</li>
+                    <li>Usar musgo ou folhas para preencher buracos</li>
+                    <li>Cobertura dupla para melhor impermeabilização</li>
+                    <li>Mais trabalho, mas muito mais resistente</li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h3>2. Cabana de Galhos</h3>
-            <ul>
-                <li>Estrutura mais robusta com paredes de galhos entrelaçados</li>
-                <li>Usar musgo ou folhas para preencher buracos</li>
-                <li>Cobertura dupla para melhor impermeabilização</li>
-                <li>Mais trabalho, mas muito mais resistente</li>
-            </ul>
-        </div>
+            <div class="section fade-in fade-in-delay-4">
+                <h3><i class="fas fa-mountain text-info"></i> 3. Uso de Cavernas (Se Disponível)</h3>
+                <ul>
+                    <li>Verificar se a caverna está segura e seca</li>
+                    <li>Limpar bem antes de ocupar</li>
+                    <li>Usar folhas secas como colchão</li>
+                    <li>Fazer uma "porta" com galhos para proteção</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="section">
-            <h3>3. Uso de Cavernas (Se Disponível)</h3>
-            <ul>
-                <li>Verificar se a caverna está segura e seca</li>
-                <li>Limpar bem antes de ocupar</li>
-                <li>Usar folhas secas como colchão</li>
-                <li>Fazer uma "porta" com galhos para proteção</li>
-            </ul>
-        </div>
-
-        <div class="success">
-            <strong>💡 Dica:</strong> O chão do abrigo deve ser coberto com folhas secas ou grama 
+        <!-- Dica -->
+        <div class="success fade-in fade-in-delay-5">
+            <strong><i class="fas fa-lightbulb text-warning"></i> Dica:</strong> O chão do abrigo deve ser coberto com folhas secas ou grama 
             para evitar o frio que vem do solo durante a noite.
         </div>
 
-        <h2>📝 Reflexão do Dia</h2>
-        <div class="section">
-            <p>Por que um bom abrigo é importante não apenas para o corpo, mas também para a mente? 
-            Como a qualidade do descanso afeta as capacidades de sobrevivência do grupo?</p>
-        </div>
+        <!-- Reflexão -->
+        <section class="fade-in fade-in-delay-5">
+            <h2><i class="fas fa-pen-fancy"></i> Reflexão do Dia</h2>
+            <div class="section">
+                <p>Por que um bom abrigo é importante não apenas para o corpo, mas também para a mente? 
+                Como a qualidade do descanso afeta as capacidades de sobrevivência do grupo?</p>
+            </div>
+        </section>
 
-        <nav id="navigation"></nav>
+        <!-- Navegação -->
+        <nav id="navigation" class="fade-in"></nav>
     </div>
 
-<script src="script.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
 </body>
 </html>
+

@@ -1,78 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Meta tags para SEO e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dia 1 - Impacto Inicial | Sobrevivência na Ilha">
     <title>Dia 1 - Impacto Inicial</title>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Container para partículas flutuantes -->
+    <div id="particles-container"></div>
 
     <div class="container">
-        <h1>🌊 Dia 1 - Impacto Inicial</h1>
+        <!-- Cabeçalho -->
+        <header class="text-center mb-4">
+            <h1 class="fade-in">
+                <i class="fas fa-water text-info"></i> Dia 1 - Impacto Inicial
+            </h1>
+        </header>
 
-        <div class="intro">
+        <!-- Introdução -->
+        <section class="intro fade-in fade-in-delay-1">
             <p>O primeiro dia após o naufrágio é o mais crítico. O foco principal é sobreviver às próximas 24 horas 
             e garantir que todos os sobreviventes estejam em segurança.</p>
+        </section>
+
+        <!-- Fase -->
+        <div class="phase short-term fade-in fade-in-delay-2">
+            <i class="fas fa-clock"></i> Fase: Sobrevivência Imediata
         </div>
 
-        <div class="phase short-term">
-            🔴 Fase: Sobrevivência Imediata
-        </div>
+        <!-- Prioridades -->
+        <section class="fade-in fade-in-delay-2">
+            <h2><i class="fas fa-bullseye"></i> Prioridades do Dia</h2>
+            
+            <div class="section fade-in fade-in-delay-2">
+                <h3><i class="fas fa-users text-info"></i> 1. Verificar Sobreviventes</h3>
+                <ul>
+                    <li>Garantir que todos estejam vivos e conscientes</li>
+                    <li>Identificar ferimentos e prestar primeiros socorros</li>
+                    <li>Contar o número de sobreviventes</li>
+                    <li>Avaliar condições físicas de cada pessoa</li>
+                </ul>
+            </div>
 
-        <h2>🎯 Prioridades do Dia</h2>
-        
-        <div class="section">
-            <h3>1. Verificar Sobreviventes</h3>
-            <ul>
-                <li>Garantir que todos estejam vivos e conscientes</li>
-                <li>Identificar ferimentos e prestar primeiros socorros</li>
-                <li>Contar o número de sobreviventes</li>
-                <li>Avaliar condições físicas de cada pessoa</li>
-            </ul>
-        </div>
+            <div class="section fade-in fade-in-delay-3">
+                <h3><i class="fas fa-droplet text-info"></i> 2. Busca por Água Potável</h3>
+                <ul>
+                    <li>Procurar rios, riachos ou nascentes próximas</li>
+                    <li>Observar Vegetais que indicam água (palmeiras, samambaias)</li>
+                    <li>Identificar possíveis locais de coleta de água da chuva</li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h3>2. Busca por Água Potável</h3>
-            <ul>
-                <li>Procurar rios, riachos ou nascentes próximas</li>
-                <li>Observar Vegetais que indicam água (palmeiras, samambaias)</li>
-                <li>Identificar possíveis locais de coleta de água da chuva</li>
-            </ul>
-        </div>
+            <div class="section fade-in fade-in-delay-3">
+                <h3><i class="fas fa-campground text-warning"></i> 3. Encontrar Abrigo Temporário</h3>
+                <ul>
+                    <li>Procurar cavernas ou áreas naturais protegidas</li>
+                    <li>Identificar locais elevados para evitar enchentes</li>
+                    <li>Verificar presença de animais peçonhentos no local</li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h3>3. Encontrar Abrigo Temporário</h3>
-            <ul>
-                <li>Procurar cavernas ou áreas naturais protegidas</li>
-                <li>Identificar locais elevados para evitar enchentes</li>
-                <li>Verificar presença de animais peçonhentos no local</li>
-            </ul>
-        </div>
+            <div class="section fade-in fade-in-delay-4">
+                <h3><i class="fas fa-users-gear"></i> 4. Organização Inicial do Grupo</h3>
+                <ul>
+                    <li>Designar pessoas para diferentes tarefas de emergência</li>
+                    <li>Estabelecer comunicação básica entre os sobreviventes</li>
+                    <li>Criar um ponto de encontro para o grupo</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="section">
-            <h3>4. Organização Inicial do Grupo</h3>
-            <ul>
-                <li>Designar pessoas para diferentes tarefas de emergência</li>
-                <li>Estabelecer comunicação básica entre os sobreviventes</li>
-                <li>Criar um ponto de encontro para o grupo</li>
-            </ul>
-        </div>
-
-        <div class="warning">
-            <strong>⚠️ Lembre-se:</strong> O primeiro dia é sobre estabilidade, não sobre conforto. 
+        <!-- Lembrete -->
+        <div class="warning fade-in fade-in-delay-4">
+            <strong><i class="fas fa-triangle-exclamation text-warning"></i> Lembre-se:</strong> 
+            O primeiro dia é sobre estabilidade, não sobre conforto. 
             Garanta que todos estejam seguros e hidratados antes de pensar em outras necessidades.
         </div>
 
-        <h2>📝 Reflexão do Dia</h2>
-        <div class="section">
-            <p>Como seria difícil tomar decisões importantes imediatamente após um naufrágio? 
-            Por que é importante manter a calma e pensar antes de agir?</p>
-        </div>
+        <!-- Reflexão -->
+        <section class="fade-in fade-in-delay-5">
+            <h2><i class="fas fa-pen-fancy"></i> Reflexão do Dia</h2>
+            <div class="section">
+                <p>Como seria difícil tomar decisões importantes imediatamente após um naufrágio? 
+                Por que é importante manter a calma e pensar antes de agir?</p>
+            </div>
+        </section>
 
-        <nav id="navigation"></nav>
+        <!-- Navegação -->
+        <nav id="navigation" class="fade-in"></nav>
     </div>
 
-<script src="script.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
 </body>
 </html>
+

@@ -1,121 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Meta tags para SEO e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto educacional sobre sobrevivência na ilha - Educação e Sociedade">
     <title>Sobrevivência na Ilha - Educação</title>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Container para partículas flutuantes -->
+    <div id="particles-container"></div>
 
+    <!-- Container principal -->
     <div class="container">
-        <h1>🏝️ Sobrevivência na Ilha</h1>
+        <!-- Cabeçalho principal -->
+        <header class="text-center mb-4">
+            <h1 class="fade-in">
+                <i class="fas fa-island-tropical"></i> Sobrevivência na Ilha
+            </h1>
+        </header>
 
-        <div class="intro">
-            <h2>Uma Aventura de Sobrevivência e Sociedade</h2>
+        <!-- Seção de introdução -->
+        <section class="intro fade-in fade-in-delay-1">
+            <h2 class="text-warning">
+                <i class="fas fa-compass"></i> Uma Aventura de Sobrevivência e Sociedade
+            </h2>
             <p>Imagine que você estava viajando de navio, sofreu um naufrágio e chegou a uma ilha deserta. 
             Nadie morreu, mas não há possibilidade de resgate ou retorno à civilização.</p>
             
-            <div class="warning">
-                <strong>⚠️ Situação:</strong> Você não está sozinho na ilha. Há outros indivíduos que também sobreviveram.
+            <div class="warning fade-in fade-in-delay-2">
+                <strong><i class="fas fa-triangle-exclamation text-warning"></i> Situação:</strong> 
+                Você não está sozinho na ilha. Há outros indivíduos que também sobreviveram.
             </div>
             
             <p>Neste projeto, exploraremos ao longo de <strong>10 dias</strong> o que é necessário para sobreviver 
             e como uma sociedade pode ser desenvolvida a partir da cooperação e cultura.</p>
-        </div>
+        </section>
 
-        <h2>🎯 Objetivos de Aprendizagem</h2>
-        <div class="section">
-            <ul>
-                <li>✔️ Pensamento crítico</li>
-                <li>✔️ Organização social</li>
-                <li>✔️ Trabalho em grupo</li>
-                <li>✔️ Noções de cultura e convivência</li>
-                <li>✔️ Reflexão sobre sobrevivência, sociedade e regras</li>
-            </ul>
-        </div>
+        <!-- Seção de objetivos -->
+        <section class="fade-in fade-in-delay-2">
+            <h2><i class="fas fa-bullseye"></i> Objetivos de Aprendizagem</h2>
+            <div class="section">
+                <ul class="mb-0">
+                    <li><i class="fas fa-brain text-info"></i> Pensamento crítico</li>
+                    <li><i class="fas fa-users text-info"></i> Organização social</li>
+                    <li><i class="fas fa-handshake text-info"></i> Trabalho em grupo</li>
+                    <li><i class="fas fa-feather text-info"></i> Noções de cultura e convivência</li>
+                    <li><i class="fas fa-question-circle text-info"></i> Reflexão sobre sobrevivência, sociedade e regras</li>
+                </ul>
+            </div>
+        </section>
 
-        <h2>📅 Cronograma da Aventura</h2>
-        
-        <div class="phase short-term">
-            🔴 CURTO PRAZO (Dias 1-5): Sobrevivência Imediata
-        </div>
+        <!-- Seção do cronograma -->
+        <section class="fade-in fade-in-delay-3">
+            <h2><i class="fas fa-calendar-days"></i> Cronograma da Aventura</h2>
+            
+            <!-- Fase de curto prazo -->
+            <div class="phase short-term fade-in fade-in-delay-3">
+                <i class="fas fa-clock"></i> CURTO PRAZO (Dias 1-5): Sobrevivência Imediata
+            </div>
 
-        <div class="day-card" onclick="navigateTo(1)">
-            <span class="day-number">Dia 1</span>
-            <h3>🌊 Impacto Inicial</h3>
-            <p>Verificar sobreviventes, buscar água, encontrar abrigo temporário e organizar o grupo.</p>
-        </div>
+            <!-- Cards dos dias 1-5 -->
+            <div class="day-card fade-in fade-in-delay-3" onclick="navigateTo(1)" role="button" tabindex="0">
+                <span class="day-number">Dia 1</span>
+                <h3><i class="fas fa-water text-info"></i> Impacto Inicial</h3>
+                <p>Verificar sobreviventes, buscar água, encontrar abrigo temporário e organizar o grupo.</p>
+            </div>
 
-        <div class="day-card" onclick="navigateTo(2)">
-            <span class="day-number">Dia 2</span>
-            <h3>💧 Água Potável</h3>
-            <p>Como encontrar e filtrar água potável para manter o grupo vivo.</p>
-        </div>
+            <div class="day-card fade-in fade-in-delay-4" onclick="navigateTo(2)" role="button" tabindex="0">
+                <span class="day-number">Dia 2</span>
+                <h3><i class="fas fa-droplet text-info"></i> Água Potável</h3>
+                <p>Como encontrar e filtrar água potável para manter o grupo vivo.</p>
+            </div>
 
-        <div class="day-card" onclick="navigateTo(3)">
-            <span class="day-number">Dia 3</span>
-            <h3>🍎 Alimentação</h3>
-            <p>Coleta de frutas, pesca improvisada e identificação de alimentos seguros.</p>
-        </div>
+            <div class="day-card fade-in fade-in-delay-4" onclick="navigateTo(3)" role="button" tabindex="0">
+                <span class="day-number">Dia 3</span>
+                <h3><i class="fas fa-apple-whole text-success"></i> Alimentação</h3>
+                <p>Coleta de frutas, pesca improvisada e identificação de alimentos seguros.</p>
+            </div>
 
-        <div class="day-card" onclick="navigateTo(4)">
-            <span class="day-number">Dia 4</span>
-            <h3>🏕 Construção de Abrigo</h3>
-            <p>Escolher local adequado, construir abrigo com materiais naturais.</p>
-        </div>
+            <div class="day-card fade-in fade-in-delay-5" onclick="navigateTo(4)" role="button" tabindex="0">
+                <span class="day-number">Dia 4</span>
+                <h3><i class="fas fa-campground text-warning"></i> Construção de Abrigo</h3>
+                <p>Escolher local adequado, construir abrigo com materiais naturais.</p>
+            </div>
 
-        <div class="day-card" onclick="navigateTo(5)">
-            <span class="day-number">Dia 5</span>
-            <h3>🔥 Segurança</h3>
-            <p>Acender fogueira, vigília noturna e proteção contra animais selvagens.</p>
-        </div>
+            <div class="day-card fade-in fade-in-delay-5" onclick="navigateTo(5)" role="button" tabindex="0">
+                <span class="day-number">Dia 5</span>
+                <h3><i class="fas fa-fire text-danger"></i> Segurança</h3>
+                <p>Acender fogueira, vigília noturna e proteção contra animais selvagens.</p>
+            </div>
 
-        <div class="phase long-term">
-            🟢 LONGO PRAZO (Dias 6-10): Formação de Sociedade
-        </div>
+            <!-- Fase de longo prazo -->
+            <div class="phase long-term fade-in fade-in-delay-5">
+                <i class="fas fa-globe-americas"></i> LONGO PRAZO (Dias 6-10): Formação de Sociedade
+            </div>
 
-        <div class="day-card" onclick="navigateTo(6)">
-            <span class="day-number">Dia 6</span>
-            <h3>👥 Divisão de Tarefas</h3>
-            <p>Organização do trabalho em grupos: água, comida e abrigo.</p>
-        </div>
+            <!-- Cards dos dias 6-10 -->
+            <div class="day-card fade-in fade-in-delay-5" onclick="navigateTo(6)" role="button" tabindex="0">
+                <span class="day-number">Dia 6</span>
+                <h3><i class="fas fa-users-gear"></i> Divisão de Tarefas</h3>
+                <p>Organização do trabalho em grupos: água, comida e abrigo.</p>
+            </div>
 
-        <div class="day-card" onclick="navigateTo(7)">
-            <span class="day-number">Dia 7</span>
-            <h3>📜 Regras e Liderança</h3>
-            <p>Criação de regras básicas, escolha de líder e resolução de conflitos.</p>
-        </div>
+            <div class="day-card fade-in" onclick="navigateTo(7)" role="button" tabindex="0">
+                <span class="day-number">Dia 7</span>
+                <h3><i class="fas fa-scroll text-warning"></i> Regras e Liderança</h3>
+                <p>Criação de regras básicas, escolha de líder e resolução de conflitos.</p>
+            </div>
 
-        <div class="day-card" onclick="navigateTo(8)">
-            <span class="day-number">Dia 8</span>
-            <h3>🌱 Produção de Alimentos</h3>
-            <p>Plantio de sementes, criação de ferramentas e armazenamento de comida.</p>
-        </div>
+            <div class="day-card fade-in" onclick="navigateTo(8)" role="button" tabindex="0">
+                <span class="day-number">Dia 8</span>
+                <h3><i class="fas fa-seedling text-success"></i> Produção de Alimentos</h3>
+                <p>Plantio de sementes, criação de ferramentas e armazenamento de comida.</p>
+            </div>
 
-        <div class="day-card" onclick="navigateTo(9)">
-            <span class="day-number">Dia 9</span>
-            <h3>🎭 Cultura</h3>
-            <p>Criação de tradições, comunicação organizada, valores e crenças.</p>
-        </div>
+            <div class="day-card fade-in" onclick="navigateTo(9)" role="button" tabindex="0">
+                <span class="day-number">Dia 9</span>
+                <h3><i class="fas fa-masks-theater text-purple"></i> Cultura</h3>
+                <p>Criação de tradições, comunicação organizada, valores e crenças.</p>
+            </div>
 
-        <div class="day-card" onclick="navigateTo(10)">
-            <span class="day-number">Dia 10</span>
-            <h3>🏛 Sociedade Organizada</h3>
-            <p>Organização política, cooperação permanente e planejamento futuro.</p>
-        </div>
+            <div class="day-card fade-in" onclick="navigateTo(10)" role="button" tabindex="0">
+                <span class="day-number">Dia 10</span>
+                <h3><i class="fas fa-landmark text-warning"></i> Sociedade Organizada</h3>
+                <p>Organização política, cooperação permanente e planejamento futuro.</p>
+            </div>
 
-        <div class="success">
-            <strong>💡 Pergunta Fundamental:</strong> O que é necessário para sobreviver na ilha a curto e longo prazo? 
-            Quais relações podem ser desenvolvidas por meio da cultura?
-        </div>
+            <!-- Pergunta fundamental -->
+            <div class="success fade-in">
+                <strong><i class="fas fa-lightbulb text-warning"></i> Pergunta Fundamental:</strong> 
+                O que é necessário para sobreviver na ilha a curto e longo prazo? 
+                Quais relações podem ser desenvolvidas por meio da cultura?
+            </div>
+        </section>
 
-        <h2>🚀 Começar a Aventura</h2>
-        <div class="btn-container">
-            <button class="btn" onclick="navigateTo(1)">Começar do Dia 1</button>
-        </div>
+        <!-- Seção para começar -->
+        <section class="text-center fade-in">
+            <h2><i class="fas fa-rocket"></i> Começar a Aventura</h2>
+            <div class="btn-container">
+                <button class="btn" onclick="navigateTo(1)">
+                    <i class="fas fa-play"></i> Começar do Dia 1
+                </button>
+            </div>
+        </section>
     </div>
 
-<script src="script.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
 </body>
 </html>
+

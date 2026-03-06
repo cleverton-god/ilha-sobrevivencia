@@ -1,80 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Meta tags para SEO e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dia 2 - Água Potável | Sobrevivência na Ilha">
     <title>Dia 2 - Água Potável</title>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Container para partículas flutuantes -->
+    <div id="particles-container"></div>
 
     <div class="container">
-        <h1>💧 Dia 2 - Água Potável</h1>
+        <!-- Cabeçalho -->
+        <header class="text-center mb-4">
+            <h1 class="fade-in">
+                <i class="fas fa-droplet text-info"></i> Dia 2 - Água Potável
+            </h1>
+        </header>
 
-        <div class="intro">
+        <!-- Introdução -->
+        <section class="intro fade-in fade-in-delay-1">
             <p>A água é a prioridade máxima para manter o grupo vivo. Um ser humano pode sobreviver 
             semanas sem comida, mas apenas dias sem água. Neste dia, o foco é garantir uma fonte 
             de água potável sustentável.</p>
+        </section>
+
+        <!-- Fase -->
+        <div class="phase short-term fade-in fade-in-delay-2">
+            <i class="fas fa-clock"></i> Fase: Sobrevivência Imediata
         </div>
 
-        <div class="phase short-term">
-            🔴 Fase: Sobrevivência Imediata
-        </div>
+        <!-- Fontes de água -->
+        <section class="fade-in fade-in-delay-2">
+            <h2><i class="fas fa-water"></i> Fontes de Água na Ilha</h2>
+            
+            <div class="section fade-in fade-in-delay-2">
+                <h3><i class="fas fa-water text-info"></i> 1. Água Natural (Melhor Opção)</h3>
+                <ul>
+                    <li><strong>Rios e riachos:</strong> Procurar água corrente que vem de terras mais altas</li>
+                    <li><strong>Nascentes:</strong> Pontos onde a água sai do solo naturalmente</li>
+                    <li><strong>Lagos/Poças:</strong> Água parada, mas pode ser filtrada</li>
+                </ul>
+            </div>
 
-        <h2>🎯 Fontes de Água na Ilha</h2>
-        
-        <div class="section">
-            <h3>1. Água Natural (Melhor Opção)</h3>
-            <ul>
-                <li><strong>rios e riachos:</strong> Procurar água corrente que vem de terras mais altas</li>
-                <li><strong>Nascentes:</strong> Pontos onde a água sai do solo naturalmente</li>
-                <li><strong>Lagos/Poças:</strong> Água parada, mas pode ser filtrada</li>
-            </ul>
-        </div>
+            <div class="section fade-in fade-in-delay-3">
+                <h3><i class="fas fa-cloud-rain text-info"></i> 2. Água da Chuva</h3>
+                <ul>
+                    <li>Usar folhas grandes ou tecidos como "coletores" de água da chuva</li>
+                    <li>Colocar recipientes debaixo de árvores (especialmente palmeiras)</li>
+                    <li>Criar sistemas simples de captação com plásticos ou folhas</li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h3>2. Água da Chuva</h3>
-            <ul>
-                <li>Usar folhas grandes ou tecidos como "coletores" de água da chuva</li>
-                <li>Colocar recipientes debaixo de árvores (especialmente palmeiras)</li>
-                <li>Criar sistemas simples de captação com plásticos ou folhas</li>
-            </ul>
-        </div>
+            <div class="section fade-in fade-in-delay-3">
+                <h3><i class="fas fa-filter text-warning"></i> 3. Método de Filtragem Caseira</h3>
+                <ul>
+                    <li><strong>Primeiro filtro:</strong> Areia grossa - Remove partículas grandes</li>
+                    <li><strong>Segundo filtro:</strong> Areia fina - Remove partículas menores</li>
+                    <li><strong>Terceiro filtro:</strong> Carvão vegetal (queimado) - Remove odores e bactérias</li>
+                    <li><strong>Quarto filtro:</strong> Pedras pequenas - Remove partículas restantes</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="section">
-            <h3>3. Método de Filtragem Caseira</h3>
-            <ul>
-                <li><strong>Primeiro filtro:</strong> Areia grossa - Remove partículas grandes</li>
-                <li><strong>Segundo filtro:</strong> Areia fina - Remove partículas menores</li>
-                <li><strong>Terceiro filtro:</strong> Carvão vegetal (queimado) - Remove odores e bactérias</li>
-                <li><strong>Quarto filtro:</strong> Pedras pequenas - Remove partículas restantes</li>
-            </ul>
-        </div>
-
-        <div class="warning">
-            <strong>⚠️ Importante:</strong> NUNCA beba água diretamente de fontes desconhecidas sem filtrar 
+        <!-- Aviso -->
+        <div class="warning fade-in fade-in-delay-4">
+            <strong><i class="fas fa-triangle-exclamation text-warning"></i> Importante:</strong> 
+            NUNCA beba água diretamente de fontes desconhecidas sem filtrar 
             ou ferver. Água parada pode conter parasitas e bactérias causadores de doenças.
         </div>
 
-        <h2>📝 Dicas de Economia</h2>
-        <div class="section">
-            <ul>
-                <li>Evitar esforço físico intenso durante o calor do dia</li>
-                <li>Beber pequenas quantidades regularmente, não grandes quantities de uma vez</li>
-                <li>Usar sombreamento para reducir a perda de água pelo suor</li>
-                <li>Não comer alimentos secos ou salgados sem ter água disponível</li>
-            </ul>
-        </div>
+        <!-- Dicas de economia -->
+        <section class="fade-in fade-in-delay-4">
+            <h2><i class="fas fa-lightbulb"></i> Dicas de Economia</h2>
+            <div class="section">
+                <ul>
+                    <li>Evitar esforço físico intenso durante o calor do dia</li>
+                    <li>Beber pequenas quantidades regularmente, não grandes quantidades de uma vez</li>
+                    <li>Usar sombreamento para reduzir a perda de água pelo suor</li>
+                    <li>Não comer alimentos secos ou salgados sem ter água disponível</li>
+                </ul>
+            </div>
+        </section>
 
-        <h2>📝 Reflexão do Dia</h2>
-        <div class="section">
-            <p>Por que a água é tão importante para a sobrevivência? O que aconteceria se o grupo 
-            não encontrasse uma fonte de água potável nos primeiros dias?</p>
-        </div>
+        <!-- Reflexão -->
+        <section class="fade-in fade-in-delay-5">
+            <h2><i class="fas fa-pen-fancy"></i> Reflexão do Dia</h2>
+            <div class="section">
+                <p>Por que a água é tão importante para a sobrevivência? O que aconteceria se o grupo 
+                não encontrasse uma fonte de água potável nos primeiros dias?</p>
+            </div>
+        </section>
 
-        <nav id="navigation"></nav>
+        <!-- Navegação -->
+        <nav id="navigation" class="fade-in"></nav>
     </div>
 
-<script src="script.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
 </body>
 </html>
+
